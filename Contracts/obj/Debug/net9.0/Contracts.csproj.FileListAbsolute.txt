@@ -1,0 +1,12 @@
+C:\SubPersonal\POC\Saga-Orchestration-POC\Contracts\bin\Debug\net9.0\Contracts.deps.json
+C:\SubPersonal\POC\Saga-Orchestration-POC\Contracts\bin\Debug\net9.0\Contracts.dll
+C:\SubPersonal\POC\Saga-Orchestration-POC\Contracts\bin\Debug\net9.0\Contracts.pdb
+C:\SubPersonal\POC\Saga-Orchestration-POC\Contracts\obj\Debug\net9.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\SubPersonal\POC\Saga-Orchestration-POC\Contracts\obj\Debug\net9.0\Contracts.AssemblyInfoInputs.cache
+C:\SubPersonal\POC\Saga-Orchestration-POC\Contracts\obj\Debug\net9.0\Contracts.AssemblyInfo.cs
+C:\SubPersonal\POC\Saga-Orchestration-POC\Contracts\obj\Debug\net9.0\Contracts.csproj.CoreCompileInputs.cache
+C:\SubPersonal\POC\Saga-Orchestration-POC\Contracts\obj\Debug\net9.0\Contracts.sourcelink.json
+C:\SubPersonal\POC\Saga-Orchestration-POC\Contracts\obj\Debug\net9.0\Contracts.dll
+C:\SubPersonal\POC\Saga-Orchestration-POC\Contracts\obj\Debug\net9.0\refint\Contracts.dll
+C:\SubPersonal\POC\Saga-Orchestration-POC\Contracts\obj\Debug\net9.0\Contracts.pdb
+C:\SubPersonal\POC\Saga-Orchestration-POC\Contracts\obj\Debug\net9.0\ref\Contracts.dll
