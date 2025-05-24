@@ -1,6 +1,14 @@
-@OrderService.API_HostAddress = http://localhost:5151
+### Create new order
+POST http://localhost:5151/api/order
+Content-Type: application/json
 
-GET {{OrderService.API_HostAddress}}/weatherforecast/
-Accept: application/json
+{
+  "orderId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "productId": "P123",
+  "quantity": 2
+}
 
-###
+### Check order status
+GET http://localhost:5000/api/order/3fa85f64-5717-4562-b3fc-2c963f66afa6
+
+
