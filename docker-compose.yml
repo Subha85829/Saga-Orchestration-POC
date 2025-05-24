@@ -10,15 +10,51 @@ services:
     environment:
       RABBITMQ_DEFAULT_USER: guest
       RABBITMQ_DEFAULT_PASS: guest
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   inventoryservice:
     build:
       context: .
       dockerfile: InventoryService.Worker/Dockerfile
     depends_on:
-      - rabbitmq
+      rabbitmq:
+        condition: service_healthy
     environment:
       - DOTNET_ENVIRONMENT=Development
       - RABBITMQ__HOST=rabbitmq
       - RABBITMQ__USERNAME=guest
       - RABBITMQ__PASSWORD=guest
+    restart: on-failure
+
+  paymentservice:
+    build:
+      context: .
+      dockerfile: PaymentService.Worker/Dockerfile
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      - DOTNET_ENVIRONMENT=Development
+      - RABBITMQ__HOST=rabbitmq
+      - RABBITMQ__USERNAME=guest
+      - RABBITMQ__PASSWORD=guest
+    restart: on-failure
+
+  shippingservice:
+    build:
+      context: .
+      dockerfile: ShippingService.Worker/Dockerfile
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      - DOTNET_ENVIRONMENT=Development
+      - RABBITMQ__HOST=rabbitmq
+      - RABBITMQ__USERNAME=guest
+      - RABBITMQ__PASSWORD=guest
+    restart: on-failure
+
